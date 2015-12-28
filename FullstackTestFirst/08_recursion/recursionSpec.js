@@ -6,7 +6,7 @@ describe('factorial', function() {
   //
   // The iterative approach is probably the one you
   // are more familiar with--it involves looping.
-  ///
+  //
   describe('iterative approach', function() {
     it('correctly computes factorial', function() {
       var result = factorialIterative(10),

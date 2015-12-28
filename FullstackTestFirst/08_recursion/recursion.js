@@ -64,7 +64,7 @@ function stringify(obj){
 	// 		myArr.push(stringify(obj[i]));
 	// 	}
 	// 	return "[" + myArr.join(',') + "]";
-	// }
+	// 
 
 	if(type(obj) === "Object"){
 		var result = [];
