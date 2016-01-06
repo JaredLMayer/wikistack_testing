@@ -9,12 +9,11 @@
 console.log('calculatorSPEC.js file');
 var calculator;
 describe("Create a Calculator", function() {
-  calculator = {calculator: 'myCalculator'};
   // Here we're just calling the `createCalculator` function, it returns
   // a calculator object.
-  // beforeEach(function() {
-  //   calculator = createCalculator();
-  // });
+  beforeEach(function() {
+     calculator = createCalculator();
+   });
 
   // When we call `value()`, it returns us 0 at the start.  We haven't run any math functions
   // yet.
