@@ -6,8 +6,7 @@
 // is just like the one we built in *01_properties*, except now we're
 // creating some useful functions add
 
-console.log('calculatorSPEC.js file');
-var calculator;
+
 describe("Create a Calculator", function() {
   // Here we're just calling the `createCalculator` function, it returns
   // a calculator object.
@@ -50,4 +49,4 @@ describe("Create a Calculator", function() {
     expect(calculator.value()).toEqual(1);
   });
 });
-console.log(calculator);
+
