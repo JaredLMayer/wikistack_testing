@@ -15,4 +15,32 @@
 - [Lecture Data Structures Part 2 - Remote]
 - [Review Data Structures Part 2 - Remote]
 
+# DOM
+- [Lecture Introduction to the DOM - Live]
+- [Review Selector.js - Live]
+
+# Sorting
+- [Lecture Sorting - Live]
+- [Review Sorting - Live]
+
+# Game of Life
+- [Lecture Game of Life - Live]
+- [Review Game of Life - Live]
+
+# Node
+- [Lecture Introduction Into Node and Asyncronicity - Live]
+- [Review Node Shell - Remote]
+
+# Express
+- [Lecture Introduction to Express - Remote]
+- [Review Twitter JS - Remote]
+
+# SQL
+- [Lecture SQL - Remote]
+- [Review SQL - Remote]
+
+# FQL
+- [Lecture FQL - Remote]
+- [Review FQL - Remote]
+
 
