@@ -8,7 +8,7 @@
 - [06 Functional](https://www.youtube.com/watch?v=fbf7aLX9dx4)
 - [07 Mammals](https://www.youtube.com/playlist?list=PLx0iOsdUOUmkJGuH7-4KJ6dToxFJzgVFh)
 - [08 Recursion](https://www.youtube.com/playlist?list=PLx0iOsdUOUmmrCVtFYTSvFgytB34qWT8a)
-- 
+
 # Data Structures
 - [Lecture Data Structures Part 1](https://www.youtube.com/watch?v=MijmeoH9LT4)
 
