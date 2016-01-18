@@ -11,4 +11,8 @@
 
 # Data Structures
 - [Lecture Data Structures Part 1](https://www.youtube.com/watch?v=MijmeoH9LT4)
+- [Review Data Structures Part 1](TBD)
+- [Lecture Data Structures Part 1](TBD)
+- [Review Data Structures Part 2](TBD)
+
 
