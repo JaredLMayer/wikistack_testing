@@ -10,7 +10,7 @@
 - [08 Recursion](https://www.youtube.com/playlist?list=PLx0iOsdUOUmmrCVtFYTSvFgytB34qWT8a)
 
 # Data Structures
-- [Lecture Data Structures Part 1 - Remote](https://www.youtube.com/watch?v=MijmeoH9LT4)
+- [Lecture Data Structures Part 1 - Remote](https://www.youtube.com/watch?v=x1JM8Wp8_mY)
 - [Review Data Structures Part 1 - Remote]
 - [Lecture Data Structures Part 2 - Remote]
 - [Review Data Structures Part 2 - Remote]
