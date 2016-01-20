@@ -11,8 +11,8 @@
 
 # Data Structures
 - [Lecture Data Structures Part 1 - Remote](https://www.youtube.com/watch?v=x1JM8Wp8_mY)
-- [Review Data Structures Part 1 - Remote]
-- [Lecture Data Structures Part 2 - Remote]
+- [Review Data Structures Part 1 - Remote](https://youtu.be/dCQmr5U9wBA)
+- [Lecture Data Structures Part 2 - Remote](https://youtu.be/COvMZy_PDws)
 - [Review Data Structures Part 2 - Remote]
 
 # DOM
