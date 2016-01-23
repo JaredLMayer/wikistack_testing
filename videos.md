@@ -14,6 +14,7 @@
 - [Review Data Structures Part 1 - Remote](https://youtu.be/dCQmr5U9wBA)
 - [Lecture Data Structures Part 2 - Remote](https://youtu.be/COvMZy_PDws)
 - [Review Data Structures Part 2 - Remote](https://youtu.be/tn9FP8GLCPE)
+- [Bonus - Binary Search Tree in 15 minutes](https://youtu.be/_YobxKoCpvU)
 
 # DOM
 - [Lecture Introduction to the DOM - Live]
