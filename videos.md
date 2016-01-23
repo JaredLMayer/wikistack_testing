@@ -27,7 +27,7 @@
 
 
 # Sorting
-- [Lecture Sorting - Live]
+- [Lecture Sorting - Live](http://youtu.be/BrQPJ0Jgdc0)
 - [Review Sorting - Live]
 
 # Game of Life
