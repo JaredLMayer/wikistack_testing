@@ -22,7 +22,9 @@
 
 # DOM
 - [Lecture Introduction to the DOM - Live](http://youtu.be/-eJ75-R_n5Y)
-- [Review Selector.js - Live]
+- [Review Selector.js - Part 1 Live](http://youtu.be/wMBSpfB_6aw)
+- [Review Selector.js - Live](http://youtu.be/03BbMKpOWQc)
+
 
 # Sorting
 - [Lecture Sorting - Live]
