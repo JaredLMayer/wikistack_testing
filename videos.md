@@ -13,11 +13,18 @@
 - [Lecture Data Structures Part 1 - Remote](https://www.youtube.com/watch?v=x1JM8Wp8_mY)
 - [Review Data Structures Part 1 - Remote](https://youtu.be/dCQmr5U9wBA)
 - [Lecture Data Structures Part 2 - Remote](https://youtu.be/COvMZy_PDws)
-- [Review Data Structures Part 2 - Remote]
+- [Review Data Structures Part 2 - Remote](https://youtu.be/tn9FP8GLCPE)
+- [Q and A Data Structures Part 2 - Live] (http://youtu.be/hhoaa1JktNo)
+- [Bonus - Binary Search Tree in 15 minutes](https://youtu.be/_YobxKoCpvU)
+- 
+# Recursion
+- [Flatten an Array](http://youtu.be/iuucg1s7b6U)
 
 # DOM
-- [Lecture Introduction to the DOM - Live]
-- [Review Selector.js - Live]
+- [Lecture Introduction to the DOM - Live](http://youtu.be/-eJ75-R_n5Y)
+- [Review Selector.js - Part 1 Live](http://youtu.be/wMBSpfB_6aw)
+- [Review Selector.js - Live](http://youtu.be/03BbMKpOWQc)
+
 
 # Sorting
 - [Lecture Sorting - Live]
