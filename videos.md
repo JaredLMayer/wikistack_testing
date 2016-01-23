@@ -18,7 +18,7 @@
 - [Bonus - Binary Search Tree in 15 minutes](https://youtu.be/_YobxKoCpvU)
 
 # DOM
-- [Lecture Introduction to the DOM - Live]
+- [Lecture Introduction to the DOM - Live](http://youtu.be/-eJ75-R_n5Y)
 - [Review Selector.js - Live]
 
 # Sorting
