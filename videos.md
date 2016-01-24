@@ -16,7 +16,7 @@
 - [Review Data Structures Part 2 - Remote](https://youtu.be/tn9FP8GLCPE)
 - [Q and A Data Structures Part 2 - Live] (http://youtu.be/hhoaa1JktNo)
 - [Bonus - Binary Search Tree in 15 minutes](https://youtu.be/_YobxKoCpvU)
-- 
+
 # Recursion
 - [Flatten an Array](http://youtu.be/iuucg1s7b6U)
 
@@ -31,7 +31,7 @@
 - [Review Sorting - Live](http://youtu.be/8PSrn_wUFe4)
 
 # Game of Life
-- [Lecture Game of Life - Live]
+- [Lecture Game of Life - Live](http://youtu.be/vKuRuebSCPM)
 - [Review Game of Life - Live]
 
 # Node
