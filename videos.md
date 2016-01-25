@@ -39,7 +39,9 @@
 - http://youtu.be/CH7wKC3Nq7A-  Part 5
 
 # Node
-- [Lecture Introduction Into Node and Asyncronicity - Live]
+
+- Lecture Intro to Node and Async Part 1 - http://youtu.be/HhkpzGsSrCg
+- Lecture Intro to Node and Async Part 2 - http://youtu.be/fcbHPVEGFHI
 - [Review Node Shell - Remote]
 
 # Express
