@@ -32,11 +32,17 @@
 
 # Game of Life
 - [Lecture Game of Life - Live](http://youtu.be/vKuRuebSCPM)
-- [Review Game of Life - Live]
+- http://youtu.be/3_ZeKLL8sqI - Part 1
+- http://youtu.be/0wDatHwwOr4 - Part 2
+- http://youtu.be/wn7Dtl7mL88-  Part 3
+- http://youtu.be/FTk-3T9ZlPg-  Part 4
+- http://youtu.be/CH7wKC3Nq7A-  Part 5
 
 # Node
-- [Lecture Introduction Into Node and Asyncronicity - Live]
-- [Review Node Shell - Remote]
+
+- Lecture Intro to Node and Async Part 1 - http://youtu.be/HhkpzGsSrCg
+- Lecture Intro to Node and Async Part 2 - http://youtu.be/fcbHPVEGFHI
+- [Review Node Shell - Remote](http://youtu.be/UjKXBBtW13k)
 
 # Express
 - [Lecture Introduction to Express - Remote]
