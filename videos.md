@@ -42,7 +42,7 @@
 
 - Lecture Intro to Node and Async Part 1 - http://youtu.be/HhkpzGsSrCg
 - Lecture Intro to Node and Async Part 2 - http://youtu.be/fcbHPVEGFHI
-- [Review Node Shell - Remote]
+- [Review Node Shell - Remote](http://youtu.be/UjKXBBtW13k)
 
 # Express
 - [Lecture Introduction to Express - Remote]
