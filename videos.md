@@ -45,7 +45,8 @@
 - [Review Node Shell - Remote](http://youtu.be/UjKXBBtW13k)
 
 # Express
-- [Lecture Introduction to Express - Remote]
+
+- [Lecture Introduction to Express -DEMO Remote](http://youtu.be/Uu6pxMZRn7Q)
 - [Review Twitter JS - Remote]
 
 # SQL
