@@ -47,6 +47,7 @@
 # Express
 
 - [Lecture Introduction to Express -DEMO Remote](http://youtu.be/Uu6pxMZRn7Q)
+- [Express/Http Protocol] (http://youtu.be/NCfJVUOCAuU)
 - [Review Twitter JS - Remote]
 
 # SQL
