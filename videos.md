@@ -37,6 +37,7 @@
 - http://youtu.be/wn7Dtl7mL88-  Part 3
 - http://youtu.be/FTk-3T9ZlPg-  Part 4
 - http://youtu.be/CH7wKC3Nq7A-  Part 5
+- https://www.youtube.com/watch?v=ag1RF6faReg- Game of Life REDUX
 
 # Node
 
@@ -45,11 +46,13 @@
 - [Review Node Shell - Remote](http://youtu.be/UjKXBBtW13k)
 
 # Express
-- [Lecture Introduction to Express - Remote]
-- [Review Twitter JS - Remote]
+
+- [Lecture Introduction to Express -DEMO Remote](http://youtu.be/Uu6pxMZRn7Q)
+- [Express/Http Protocol] (http://youtu.be/r6J45BVxNRw)
+- [Review Twitter JS - Remote] (https://www.youtube.com/watch?v=0NvankAwgHU)
 
 # SQL
-- [Lecture SQL - Remote]
+- [Lecture SQL - Remote](https://www.youtube.com/watch?v=I4skpLCY6e4)
 - [Review SQL - Remote]
 
 # FQL
