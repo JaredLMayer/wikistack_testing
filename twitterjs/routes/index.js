@@ -6,7 +6,7 @@ var myio = require('../utils/myio');
 var swig = require('swig');
 var path = require('path'); 
 
-module.exports = function makeRouterWithSockets (io) {
+module.exports = router; 
 
   // a reusable function
   function respondWithAllTweets (req, res, next){
@@ -59,6 +59,3 @@ module.exports = function makeRouterWithSockets (io) {
   // router.get('/stylesheets/style.css', function(req, res, next){
   //   res.sendFile('/stylesheets/style.css', { root: __dirname + '/../public/' });
   // });
-
-  return router;
-};
