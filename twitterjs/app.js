@@ -9,6 +9,7 @@ var path = require('path');
 var mime = require('mime');
 var bodyParser = require('body-parser');
 var socketio = require('socket.io');
+var myio = require('./utils/myio');
 
 // templating boilerplate setup
 app.set('views', path.join(__dirname, '/views')); // where to find the views
@@ -29,6 +30,7 @@ var server = app.listen(1337, function(){
   console.log('listening on port 1337');
 });
 var io = socketio.listen(server);
+myio.set(io);
 
 // modular routing that uses io inside it
 app.use('/', makesRouter(io));

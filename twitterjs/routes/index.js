@@ -2,6 +2,9 @@
 var express = require('express');
 var router = express.Router();
 var tweetBank = require('../tweetBank');
+var myio = require('../utils/myio');
+var swig = require('swig');
+var path = require('path'); 
 
 module.exports = function makeRouterWithSockets (io) {
 
@@ -41,8 +44,14 @@ module.exports = function makeRouterWithSockets (io) {
 
   // create a new tweet
   router.post('/tweets', function(req, res, next){
-    var newTweet = tweetBank.add(req.body.name, req.body.text);
-    io.sockets.emit('new_tweet', newTweet);
+    var tweet = tweetBank.add(req.body.name, req.body.text);
+    var tweetHtml = swig.renderFile(
+        path.join(__dirname, '../views/tweet.html'),
+        { tweet : tweet },
+        function(err, data){
+          myio.emit('new_tweet', data);
+        });
+
     res.redirect('/');
   });
 
@@ -52,4 +61,4 @@ module.exports = function makeRouterWithSockets (io) {
   // });
 
   return router;
-}
+};
