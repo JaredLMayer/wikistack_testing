@@ -56,6 +56,7 @@
 - [Review SQL - Part 1] (http://www.youtube.com/watch?v=JoCDQxfokTY)
 - [Review SQL - Part 2] (http://www.youtube.com/watch?v=JoCDQxfokTY)
 - [Review SQL - Part 2] (http://www.youtube.com/watch?v=CA4bQJgRVt8)
+
 # FQL
 - [Lecture FQL](http://www.youtube.com/watch?v=CA4bQJgRVt8)
 - [Review FQL]
