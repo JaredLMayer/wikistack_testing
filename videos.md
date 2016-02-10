@@ -53,7 +53,7 @@
 
 # SQL
 - [Lecture SQL](https://www.youtube.com/watch?v=I4skpLCY6e4)
-- [Review SQL - Part 1] (http://www.youtube.com/watch?v=JoCDQxfokTY)
+- [Review SQL - Part 1] (http://www.youtube.com/watch?v=DEIUXkeBsLY)
 - [Review SQL - Part 2] (http://www.youtube.com/watch?v=JoCDQxfokTY)
 - [Review SQL - Part 2] (http://www.youtube.com/watch?v=CA4bQJgRVt8)
 
