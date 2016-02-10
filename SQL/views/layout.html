@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <link rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap.css' />
+  </head>
+  <body>
+    <ul class='nav nav-tabs'>
+      <li {% if mode === 'home' %} class='active' {% endif %}>
+        <a href='/'>Home</a>
+      </li>
+      <li {% if mode === 'genre' %} class='active' {% endif %}>
+        <a href='/movies/by_genre'>Movies By Genre</a>
+      </li>
+      <li {% if mode === 'year' %} class='active' {% endif %}>
+        <a href='/movies/by_year'>Movies By Year</a>
+      </li>
+    </ul>
+    <div class='container'>
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>

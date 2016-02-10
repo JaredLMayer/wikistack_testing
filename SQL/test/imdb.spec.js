@@ -229,7 +229,7 @@ describe('imdb queries', function(){
   });
   describe('longevityActors', function(){
     beforeEach(function(done){
-      this.timeout(5000);
+      this.timeout(10000);
       var qry = `
         SELECT actors.first_name as first_name, actors.last_name as last_name
         FROM actors
@@ -282,7 +282,53 @@ describe('imdb queries', function(){
       expect(movies.count).eq(11643);;
     });
   });
-  
-
+  describe('movieMapGenres', function(){
+    beforeEach(function(done){
+      this.timeout(5000);
+      db.movieMapGenres(function(err, _results){
+        results = _results;
+        done();
+      });
+    });
+    it('shorts is the most popular genre', function(){
+      expect(results[0].name).to.eq('Short');
+    });
+  });
+  describe('movieMapYears', function(){
+    beforeEach(function(done){
+      this.timeout(5000);
+      db.movieMapYears(function(err, _results){
+        results = _results;
+        done();
+      });
+    });
+    it('most movies in 2002', function(){
+      expect(results[0].name).to.eq(2002);
+    });
+  });
+  describe('moviesByYear', function(){
+    beforeEach(function(done){
+      this.timeout(5000);
+      db.moviesByYear(1982, function(err, _results){
+        results = _results;
+        done();
+      });
+    });
+    it('there are many movies', function(){
+      expect(results.length).to.eq(500);
+    });
+  });
+  describe('moviesByGenre', function(){
+    beforeEach(function(done){
+      this.timeout(5000);
+      db.moviesByGenre('Short', function(err, _results){
+        results = _results;
+        done();
+      });
+    });
+    it('there are many movies', function(){
+      expect(results.length).to.eq(500);
+    });
+  });
 
 });

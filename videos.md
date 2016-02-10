@@ -49,15 +49,15 @@
 
 - [Lecture Introduction to Express -DEMO Remote](http://youtu.be/Uu6pxMZRn7Q)
 - [Express/Http Protocol] (http://youtu.be/r6J45BVxNRw)
-- [Review Twitter JS - Remote] (https://www.youtube.com/watch?v=0NvankAwgHU)
+- [Review Twitter JS] (https://www.youtube.com/watch?v=0NvankAwgHU)
 
 # SQL
-- [Lecture SQL - Remote](https://www.youtube.com/watch?v=I4skpLCY6e4)
+- [Lecture SQL](https://www.youtube.com/watch?v=I4skpLCY6e4)
 - [Review SQL - Part 1] (http://www.youtube.com/watch?v=JoCDQxfokTY)
 - [Review SQL - Part 2] (http://www.youtube.com/watch?v=JoCDQxfokTY)
-
+- [Review SQL - Part 2] (http://www.youtube.com/watch?v=CA4bQJgRVt8)
 # FQL
-- [Lecture FQL - Remote]
-- [Review FQL - Remote]
+- [Lecture FQL](http://www.youtube.com/watch?v=CA4bQJgRVt8)
+- [Review FQL]
 
 

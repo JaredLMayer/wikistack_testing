@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block content %}
+  <h2>{{title}}</h2>
+
+  {% if backUrl %}
+    <a href='{{ backUrl }}'>Back</a>
+  {% endif %}
+
+  {% if map %}
+    <ul class='list-group'>
+      {% for pair in map %}
+      <li class='list-group-item'>
+        <a href='{{url}}/{{pair.name}}'>{{ pair.name }}</a>
+        <span class='badge'>{{pair.count}}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if movies %}
+    <ul class='list-group'>
+      {% for movie in movies %}
+      <li class='list-group-item'>
+        {{ movie.name }}
+        <span class='badge'>{{movie.rank}}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+
+{% endblock %}
