@@ -60,7 +60,7 @@
 - [Cloud9 - SqliteDB Web App] (http://youtu.be/UjSgWb8bzjA)
 
 # FQL
-- [Lecture FQL](http://www.youtube.com/watch?v=CA4bQJgRVt8)
+- [Lecture FQL](https://www.youtube.com/watch?v=wg7YPJ8gSuU)
 - [Review FQL] (https://www.youtube.com/watch?v=xeuSGWtA2NY&feature=youtu.be)
 
 # Practical Promises 
