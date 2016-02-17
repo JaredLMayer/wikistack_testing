@@ -53,12 +53,18 @@
 
 # SQL
 - [Lecture SQL](https://www.youtube.com/watch?v=I4skpLCY6e4)
-- [Review SQL - Part 1] (http://www.youtube.com/watch?v=DEIUXkeBsLY)
+- [Review SQL - Part 1] (http://www.youtube.com/watch?v=JoCDQxfokTY)
 - [Review SQL - Part 2] (http://www.youtube.com/watch?v=JoCDQxfokTY)
-- [Review SQL - Part 3] (http://www.youtube.com/watch?v=CA4bQJgRVt8)
+- [Review SQL - Part 2] (http://www.youtube.com/watch?v=CA4bQJgRVt8)
+
+- [Cloud9 - SqliteDB Web App] (http://youtu.be/UjSgWb8bzjA)
 
 # FQL
-- [Lecture FQL](http://www.youtube.com/watch?v=wg7YPJ8gSuU)
-- [Review FQL]
+- [Lecture FQL](http://www.youtube.com/watch?v=CA4bQJgRVt8)
+- [Review FQL] (https://www.youtube.com/watch?v=xeuSGWtA2NY&feature=youtu.be)
+
+# Practical Promises 
+- [Lecture Practical Promises](http://www.youtube.com/watch?v=DPHoULC69mQ)
+- [Review Practical Promises] ()
 
 
