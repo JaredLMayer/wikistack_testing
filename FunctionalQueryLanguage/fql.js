@@ -99,6 +99,36 @@ FQL.prototype.BAKwhere = function(filter){
   );
 };
 
+FQL.prototype.where = function(filter){
+  var filtered = this.table;
+  Object.keys(filter).forEach(function(key){
+    var index = this.getIndicesOf(key, filter[key]);
+    if(index){
+      filtered = index.reduce(function(memo, idx){
+        memo.push(filtered[idx]);
+        return memo;
+      }, []);
+      delete filter[key];
+    }
+  }, this);
+  return new FQL(
+      filtered.filter(function(row){
+        var match = true;
+        Object.keys(filter).forEach(function(key){
+          if(
+              (typeof filter[key] === 'function' && !filter[key](row[key]))
+              || 
+              (typeof filter[key] !== 'function' && filter[key] !== row[key])
+            ){
+            match = false;
+            return;
+          }
+        });
+        return match;
+      })
+  );
+};
+
 FQL.prototype.left_join = function(right, fn){
   return new FQL(
       this.table.reduce(function(memo, leftRow){
