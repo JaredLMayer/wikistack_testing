@@ -69,7 +69,7 @@ FQL.prototype.select = function(keys){
   );
 };
 
-FQL.prototype.where = function(filter){
+FQL.prototype.BAKwhere = function(filter){
   var filtered = this.table;
   Object.keys(filter).forEach(function(key){
     var index = this.getIndicesOf(key, filter[key]);
