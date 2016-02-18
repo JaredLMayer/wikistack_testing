@@ -69,18 +69,39 @@ FQL.prototype.select = function(keys){
   );
 };
 
-FQL.prototype.BAKwhere = function(filter){
+FQL.prototype.where = function(filter){
   var filtered = this.table;
-  Object.keys(filter).forEach(function(key){
-    var index = this.getIndicesOf(key, filter[key]);
-    if(index){
-      filtered = index.reduce(function(memo, idx){
-        memo.push(filtered[idx]);
-        return memo;
-      }, []);
+  var self = this;
+  var indexes = Object.keys(filter).reduce(function(memo, key){
+    var index = self.getIndicesOf(key, filter[key]);
+    if(index)
+      memo[key] = index;
+    return memo;
+  }, {});
+
+  if(Object.keys(indexes).length > 1){
+    var indexMap = Object.keys(indexes).reduce(function(memo, key){
+      indexes[key].forEach(function(val){
+        if(typeof memo[val] === 'undefined')
+          memo[val] = 0;
+        memo[val]++;
+      });
+      return memo;
+    }, {});
+    filtered = [];
+    Object.keys(indexMap).forEach(function(key){
+      
+      if(indexMap[key] == Object.keys(indexes).length)
+        filtered.push(self.table[key]);
+    });
+
+    filter = merge(filter, {});
+
+    Object.keys(indexes).forEach(function(key){
       delete filter[key];
-    }
-  }, this);
+    });
+  }
+
   return new FQL(
       filtered.filter(function(row){
         var match = true;
@@ -98,6 +119,8 @@ FQL.prototype.BAKwhere = function(filter){
       })
   );
 };
+
+/*
 
 FQL.prototype.where = function(filter){
   var filtered = this.table;
@@ -128,6 +151,7 @@ FQL.prototype.where = function(filter){
       })
   );
 };
+*/
 
 FQL.prototype.left_join = function(right, fn){
   return new FQL(

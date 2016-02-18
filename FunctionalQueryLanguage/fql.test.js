@@ -1,7 +1,9 @@
 var fqlModule = require('./fql');
+var expect = require('chai').expect;
 var FQL = fqlModule.FQL;
 var merge = fqlModule.merge;
 var _readTable = fqlModule._readTable;
+var sinon = require('sinon');
 
 var movies = _readTable('movies-table');
 var actors = _readTable('actors-table');
@@ -19,7 +21,7 @@ describe('Utility functions', function () {
     var obj3 = {};
     obj3 = merge(obj3, obj2);
     obj3 = merge(obj3, obj1);
-    expect(obj3).toEqual({a:1, b:2});
+    expect(obj3).to.eql({a:1, b:2});
   });
 });
 
@@ -50,7 +52,7 @@ describe('Functional Query Language', function () {
    */
   it('should have an exec function', function () {
     var all_movies = moviesTable.exec();
-    expect(all_movies).toEqual(movies);
+    expect(all_movies).to.eql(movies);
   });
 
   it('should have a count method', function () {
@@ -58,7 +60,7 @@ describe('Functional Query Language', function () {
     // again, checkout out the `movies` var to see the data set
     // 
     // There are 36 movies in the movies Array
-    expect(moviesTable.count()).toEqual(36);
+    expect(moviesTable.count()).to.equal(36);
   });
 
   /**
@@ -67,7 +69,7 @@ describe('Functional Query Language', function () {
    *  then show only those rows.
    */
   it('should have a limit() method', function () {
-    expect(moviesTable.limit(5).count()).toEqual(5);
+    expect(moviesTable.limit(5).count()).to.equal(5);
   });
 
   /**
@@ -77,14 +79,14 @@ describe('Functional Query Language', function () {
   it('should limit and have chained exec function', function () {
     // this will return the first movie row, Aliens
     var first_movie = moviesTable.limit(1).exec();
-    expect(first_movie.length).toEqual(1);
-    expect(first_movie[0].name).toEqual("Aliens");
+    expect(first_movie.length).to.equal(1);
+    expect(first_movie[0].name).to.equal("Aliens");
   });
 
   it('should reset to original data after exec', function () {
     moviesTable.limit(1).exec();
     var all_movies = moviesTable.exec();
-    expect(all_movies).toEqual(movies);
+    expect(all_movies).to.eql(movies);
   });
 
   /** 
@@ -99,8 +101,8 @@ describe('Functional Query Language', function () {
     var results = moviesTable.where({name: "Shrek"}).exec();
     // results should look like this:
     // [{"id":300229,"name":"Shrek","year":2001,"rank":8.1}] 
-    expect(results[0].year).toEqual(2001);
-    expect(results[0].id).toEqual(300229);
+    expect(results[0].year).to.equal(2001);
+    expect(results[0].id).to.equal(300229);
   });
 
   /**
@@ -114,7 +116,7 @@ describe('Functional Query Language', function () {
                     }})
                     .exec();
 
-    expect(results.length).toEqual(10);
+    expect(results.length).to.equal(10);
   });
 
   /** 
@@ -125,7 +127,7 @@ describe('Functional Query Language', function () {
   it('should support where queries that return multiple rows', function () {
     var results = moviesTable.where({year: 2001}).exec();
     var expectedResults = [{"id":238072,"name":"Ocean's Eleven","year":2001,"rank":7.5},{"id":300229,"name":"Shrek","year":2001,"rank":8.1},{"id":350424,"name":"Vanilla Sky","year":2001,"rank":6.9}];
-    expect(results).toEqual(expectedResults);    
+    expect(results).to.eql(expectedResults);    
   });
 
 
@@ -141,8 +143,9 @@ describe('Functional Query Language', function () {
                       rank: function (v) {return v > 8;}
                     })
                     .exec();
-    var expectedResults = [{"id":300229,"name":"Shrek","year":2001,"rank":8.1}];    expect(results).toEqual(expectedResults);    
-    expect(results).toEqual(expectedResults);
+    var expectedResults = [{"id":300229,"name":"Shrek","year":2001,"rank":8.1}];
+    expect(results).to.eql(expectedResults);    
+    expect(results).to.eql(expectedResults);
   });
   
   /** 
@@ -156,7 +159,7 @@ describe('Functional Query Language', function () {
                     .limit(3)
                     .exec();
     var expectedResults = [{"id":10920,"name":"Aliens"},{"id":46169,"name":"Braveheart"},{"id":109093,"name":"Fargo"}];
-    expect(results).toEqual(expectedResults);
+    expect(results).to.eql(expectedResults);
   });
 
   /** 
@@ -174,7 +177,7 @@ describe('Functional Query Language', function () {
                     .limit(3)
                     .exec();
     var expectedResults = [ { id: 147603, name: 'Hollow Man', year: 2000, rank: 5.3 }, { id: 116907, name: 'Footloose', year: 1984, rank: 5.8 }, { id: 344203, name: 'UHF', year: 1989, rank: 6.6 } ];
-    expect(results).toEqual(expectedResults);
+    expect(results).to.eql(expectedResults);
   });
 
   it('ordering should not change the order for subsequent queries', function () {
@@ -187,8 +190,8 @@ describe('Functional Query Language', function () {
                     .where({year: 1999})
                     .limit(1)
                     .exec();
-    expect(resultsA).toEqual([ { id: 314965, name: 'Stir of Echoes', year: 1999, rank: 7 } ]);
-    expect(resultsB).toEqual([ { id: 112290, name: 'Fight Club', year: 1999, rank: 8.5 } ]);
+    expect(resultsA).to.eql([ { id: 314965, name: 'Stir of Echoes', year: 1999, rank: 7 } ]);
+    expect(resultsB).to.eql([ { id: 112290, name: 'Fight Club', year: 1999, rank: 8.5 } ]);
   });
 
 });
@@ -234,7 +237,7 @@ describe('Functional Query Language - Level 2', function () {
     var expectedResults = [
       {"id":147603,"name":"Hollow Man","year":2000,"rank":5.3,"actor_id":9184,"movie_id":147603,"role":"Dad"},
       {"id":147603,"name":"Hollow Man","year":2000,"rank":5.3,"actor_id":22591,"movie_id":147603,"role":"Sebastian Caine"}] ;
-    expect(results).toEqual(expectedResults);
+    expect(results).to.eql(expectedResults);
   });
 
   it('should support left outer joining the results with a count', function () {
@@ -250,7 +253,7 @@ describe('Functional Query Language - Level 2', function () {
                     .count();
     // 21 roles were in the movie
     // you can verify this be search in the roles array for anything with movie_id === 147603
-    expect(results).toEqual(21);
+    expect(results).to.equal(21);
   });
 
   /**
@@ -277,7 +280,7 @@ describe('Functional Query Language - Level 2', function () {
         {"name":"Hollow Man","first_name":"Steve","last_name":"Altes","role":"Dad"},
         {"name":"Hollow Man","first_name":"Kevin","last_name":"Bacon","role":"Sebastian Caine"},
         {"name":"Hollow Man","first_name":"Josh","last_name":"Brolin","role":"Matthew Kensington"}];
-    expect(results).toEqual(expectedResults);
+    expect(results).to.eql(expectedResults);
   });
 
 });
@@ -312,9 +315,9 @@ describe('Functional Query Language - Indexing', function () {
   it('should support a function to add an index to the FQL class', function() {
     // it should not be possible to look up the index of an entry
     // in a row prior to `addIndex` on that row
-    expect( moviesTable.getIndicesOf('name', 'Apollo 13') ).toEqual( undefined );
+    expect( moviesTable.getIndicesOf('name', 'Apollo 13') ).to.equal( undefined );
     moviesTable.addIndex('name');
-    expect( moviesTable.getIndicesOf('name', 'Apollo 13') ).toEqual( [2] );
+    expect( moviesTable.getIndicesOf('name', 'Apollo 13') ).to.eql( [2] );
   });
 
 
@@ -328,7 +331,7 @@ describe('Functional Query Language - Indexing', function () {
   it('should support indexing a value that exists in multiple rows', function() {
     
     actorsTable.addIndex('last_name');
-    expect( actorsTable.getIndicesOf('last_name', 'Allison') ).toEqual( [14, 15, 16] );
+    expect( actorsTable.getIndicesOf('last_name', 'Allison') ).to.eql( [14, 15, 16] );
   });
 
 
@@ -344,13 +347,33 @@ describe('Functional Query Language - Indexing', function () {
   it('should use available indices during where queries', function() {
     actorsTable.addIndex('last_name');
 
-    spyOn(actorsTable, 'getIndicesOf').and.callThrough();
+    var spy = sinon.spy(actorsTable, 'getIndicesOf');
+    //spyOn(actorsTable, 'getIndicesOf').and.callThrough();
     var results = actorsTable.where({last_name: "Russell"}).exec();
-    expect( results.length ).toEqual( 4 );
-    expect( actorsTable.getIndicesOf ).toHaveBeenCalledWith( 'last_name', 'Russell' );
+    expect( results.length ).to.equal( 4 );
+    expect( actorsTable.getIndicesOf.calledWith('last_name', 'Russell' )).to.be.ok;
+  });
+
+  it('using two indexes with no results', function() {
+    actorsTable.addIndex('last_name');
+    actorsTable.addIndex('first_name');
+    var spy = sinon.spy(actorsTable, 'getIndicesOf');
+
+    var results = actorsTable.where({last_name: "Russell", first_name: 'Lucy', gender: 'F'}).exec();
+    expect( results.length ).to.equal( 1 );
+    expect( actorsTable.getIndicesOf.calledWith('last_name', 'Russell' )).to.be.ok;
+  });
+
+  it('using two indexes with one result', function() {
+    actorsTable.addIndex('last_name');
+    actorsTable.addIndex('first_name');
+
+    var results = actorsTable.where({last_name: "Russell", first_name: 'Lucy', gender: 'M'}).exec();
+    expect( results.length ).to.equal( 0 );
   });
 
   it('should produce the same query results with significantly faster look up times', function() {
+    this.timeout(5000);
     console.log('');
     console.time('Without index');
     for (var timesToRun = 1000; timesToRun--;) {
@@ -366,7 +389,7 @@ describe('Functional Query Language - Indexing', function () {
     }
     console.timeEnd('With index');
 
-    expect( noIndexResults ).toEqual( indexResults );
+    expect( noIndexResults ).to.eql( indexResults );
   });
 
 });

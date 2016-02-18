@@ -4,7 +4,7 @@
   "description": "The goal here is to build a JavaScript class called FQL that will be a pure JavaScript implementation of SQL.  By working on this exercise, you will get a chance to explore how the inner workings of a database engine might work.",
   "main": "fql.js",
   "scripts": {
-    "test": "node_modules/.bin/jasmine fql.test.js"
+    "test": "node_modules/.bin/mocha *test.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,10 @@
   "homepage": "https://github.com/FullstackAcademy/FunctionalQueryLanguage#readme",
   "dependencies": {
     "jasmine": "^2.3.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3"
   }
 }
