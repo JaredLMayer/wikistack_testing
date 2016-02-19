@@ -65,6 +65,6 @@
 
 # Practical Promises 
 - [Lecture Practical Promises](http://www.youtube.com/watch?v=DPHoULC69mQ)
-- [Review Practical Promises] ()
+- [Review Practical Promises] (http://www.youtube.com/watch?v=6_8TzzBFiUI)
 
 
