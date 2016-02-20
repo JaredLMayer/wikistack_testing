@@ -67,4 +67,6 @@
 - [Lecture Practical Promises](http://www.youtube.com/watch?v=DPHoULC69mQ)
 - [Review Practical Promises] (http://www.youtube.com/watch?v=6_8TzzBFiUI)
 
+# Mongo
+- [Lecture] (http://youtu.be/s0IpPP7KA68)
 
