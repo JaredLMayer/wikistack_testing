@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block content %}
+  <div class='row'>
+    <div class='col-sm-8'>
+      <ul class='list-group'>
+        {% for tweet in user.Tweets %}
+          <li class='list-group-item'>
+            <a href='/tweets/{{tweet.id}}'>{{ tweet.tweet }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class='col-sm-4'>
+      {% include '_form.html' with { user :  user } %}
+    </div>
+  </div>
+{% endblock %}

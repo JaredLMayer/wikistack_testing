@@ -1,0 +1,22 @@
+{
+  "name": "twittersql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "method-override": "^2.3.5",
+    "mysql": "^2.10.2",
+    "sequelize": "^3.19.3",
+    "sqlite3": "^3.1.1",
+    "swig": "^1.4.2"
+  }
+}

@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/vendor/bootstrap/dist/css/bootstrap.css'></link>
+  </head>
+  <body>
+    <ul class='nav nav-tabs'>
+      <li {% if mode=== 'Home' %} class='active' {% endif %}>
+        <a href='/'>Home</a>
+      </li>
+      <li {% if mode=== 'Users' %} class='active' {% endif %}>
+        <a href='/users'>Users</a>
+      </li>
+    </ul>
+    <div class='container'>
+      <h1>{{ title }}</h1>
+      {% if backLink %}
+        <div>
+          <a href='{{backLink.url}}'>{{backLink.text}}</a>
+        </div>
+      {% endif %}
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
