@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <div>
+    by <a href='/wiki/users/{{page.author.id}}'>{{ page.author.name }}</a>
+    {% include '_tags.html' with {tags: page.tags} %}
+  </div>
+  <div class='well'>
+    {% autoescape false %}{{ page.renderedContent }}{% endautoescape %}
+  </div>
+  <form method='POST' action='/wiki/{{page.id}}?_method=delete'>
+    <button type='submit' class='btn btn-danger'>Delete</button>
+  </form>
+{% endblock %}

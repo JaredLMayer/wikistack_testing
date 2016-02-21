@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h2>to <a href='{{page.route}}'>{{page.title}}</a></h2>
+{% include '_tags.html' with { tags: page.tags } %}
+  <ul class='list-group'>
+  {% for _page in pages %}
+      {% include '_pageItem.html' with { page: _page, similarTags: page.tags} %}
+    {% endfor %}
+  </ul>
+  {% endblock %}

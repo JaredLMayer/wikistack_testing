@@ -1,0 +1,11 @@
+  <div style='margin: 5px 0'>
+    {% for tag in tags %}
+      <span 
+        {% if similarTags && similarTags.indexOf(tag) !== -1 %}
+        class='label label-success'
+        {% else %}
+        class='label label-default'
+        {% endif %}
+        ><a href='/wiki/tag/{{tag}}' style='color:white'>{{tag}}</a></span> 
+    {% endfor %}
+  </div>

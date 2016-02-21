@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel='stylesheet' href='/vendor/bootstrap/dist/css/bootstrap.css' />
+    <link rel='stylesheet' href='/public/styles.css' />
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <ul class='nav nav-tabs'>
+      <li>
+        <a href='/'>Wikistack</a>
+      </li>
+      <li>
+        <a href='/users'>Users</a>
+      </li>
+    </ul>
+    <div class='container'>
+      <h1>{{title}}</h1>
+      <div class='row' style='margin: 10px 0'>
+        <div class='col-md-8'>
+            <form class='well' action='/wiki/search'>
+              <input placeholder='search by tag' class='form-control' name='tags' onblur='this.form.submit()'/>
+            </form>
+        </div>
+        <div class='col-md-4'>
+          <div style='margin: 5px 0'>
+            {% if author %}
+            <a class='btn btn-primary' href='/wiki/add/{{author.id}}'>Add a page</a>
+            {% else %}
+            <a class='btn btn-primary' href='/wiki/add'>Add a page</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% block content %}
+    {% endblock %}
+    </div>
+  </body>
+</html>

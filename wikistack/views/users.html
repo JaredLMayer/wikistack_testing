@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <ul class='list-group'>
+  {% for user in users %}
+    <li class='list-group-item'>
+      <a href='/wiki/users/{{user.id}}'>
+        {{ user.name }}
+      </a>
+      <span class='badge'>{{map[user.id] || '0'}}</span>
+    </li>
+  {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h2>by tags</h2>
+{% include '_tags.html' with {tags: tags} %}
+  <ul class='list-group'>
+  {% for _page in pages %}
+      {% include '_pageItem.html' with { page: _page, similarTags: tags} %}
+    {% endfor %}
+  </ul>
+  {% endblock %}

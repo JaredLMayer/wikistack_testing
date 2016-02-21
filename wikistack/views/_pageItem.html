@@ -1,0 +1,6 @@
+<li class='list-group-item'>
+  <a href='{{page.route}}'>{{ page.title }}</a>
+  by <a href='/wiki/users/{{ page.author.id }}'>{{page.author.name}}</a>
+  {% include '_tags.html' with { tags: page.tags } %}
+  <a href='{{page.similarRoute}}'>Similar Pages</a>
+</li>
