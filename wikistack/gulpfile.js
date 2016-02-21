@@ -30,9 +30,22 @@ gulp.task('seed', function(){
       ]);
     })
     .then(function(pages){
-      console.log(pages[0].url);
-      console.log(pages[1].url);
-      console.log(pages);
+      return Page.find({ tags: 'foo' });
+    })
+    .then(function(fooPages){
+      console.log('***foo***');
+      fooPages.forEach(function(page){
+        console.log(page.title, page.tags);
+      });
+    })
+    .then(function(pages){
+      return Page.find({ tags: { $in: ['foo', 'sql', 'ES6']} });
+    })
+    .then(function(fooPages){
+      console.log('***[foo, sql,ES6]***');
+      fooPages.forEach(function(page){
+        console.log(page.title, page.tags);
+      });
     })
     .then(function(){
       return db.disconnect();
