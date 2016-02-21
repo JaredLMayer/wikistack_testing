@@ -69,4 +69,5 @@
 
 # Mongo
 - [Lecture] (http://youtu.be/s0IpPP7KA68)
+- [Review] (https://www.youtube.com/watch?v=ZsM3_MsEE00&feature=youtu.be)
 
